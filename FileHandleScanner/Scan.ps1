@@ -1,6 +1,6 @@
 ﻿param([String]$query, [String]$outfile="filehandlescanner.log")
 
-if ([System.IO.File]::Exists($outfile) -And (Get-Item $outfile).length -gt 1kb) {
+if ([System.IO.File]::Exists($outfile) -And (Get-Item $outfile).length -gt 10240kb) {
 	Write-Host "Exceeded log file size limit!"
 	exit
 }
