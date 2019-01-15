@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SandboxLib;
+using System;
 
 namespace Sandbox
 {
@@ -6,7 +7,8 @@ namespace Sandbox
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Starting Greeter loop: ");
+            new Greeter().GreetingLoop();
         }
     }
 }
